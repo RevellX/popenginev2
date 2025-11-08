@@ -1,45 +1,34 @@
 # PopEngine
 
-PopEngine is a backend service designed to organize daily delivery tasks and manage dispatchers’ shift assignments.  
-It improves transparency of responsibilities across drivers + dispatch team, and provides a simple domain model for operational workflows.
+PopEngine is a SPA made to organize daily delivery tasks and manage dispatchers’ shift assignments.
+You can add new users which can have assigned tasks. The tasks are displayed as a schedule.
+
+First you create tasks that have name, due time, location.
+Then you assign those tasks to users.
 
 ## Why this exists
 
-Delivery operations are chaos when responsibilities are unclear — this tries to fix that by:
+I was expierencing logistical problems in one of my past workplaces and since I was learnig to code I decided to create this project and solve at least one of these problems.
 
-- modeling daily tasks and shifts with very simple, explicit domain objects
-- exposing small, focused REST endpoints
-- making “who owns what today” obvious
+## Live Demo
 
-## Features
+https://popengine.revellx.engine.pl
 
-- CRUD for daily delivery tasks
-- Manage dispatcher shift assignments
-- Track responsibility handoffs between dispatchers and drivers
-- Opinionated / small API surface (simplicity > everything)
+## Screenshots
+
+```
+![Desktop View - Schedule](https://imgur.com/ywDiTdF)
+
+![Mobile View - Schedule](https://imgur.com/4vfreFf)
+
+![Adding New Duty Form](https://imgur.com/yx0V9up)
+```
 
 ## Tech stack
 
-| Layer       | Tech    |
-| ----------- | ------- |
-| Runtime     | Node.js |
-| HTTP Server | Express |
-| Persistence | MongoDB |
-
-## API (high level)
-
-| Area   | Example endpoints                          |
-| ------ | ------------------------------------------ |
-| Tasks  | `POST /tasks`, `GET /tasks?day=YYYY-MM-DD` |
-| Shifts | `POST /shifts`, `GET /shifts/today`        |
-
-(_actual routes may vary depending on your implementation_)
-
-## Getting started (dev)
-
-```bash
-git clone https://github.com/<YOUR_USER>/popengine.git
-cd popengine
-npm install
-npm run dev
-```
+| Layer       | Tech      |
+| ----------- | --------- |
+| Runtime     | Node.js   |
+| HTTP Server | Express   |
+| ORM         | Sequelize |
+| Persistence | MongoDB   |
