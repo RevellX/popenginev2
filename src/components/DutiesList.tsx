@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router";
 import { Duty } from "../models/Duty";
 
 interface DutiesListProps {
