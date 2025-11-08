@@ -16,11 +16,17 @@ https://popengine.revellx.engine.pl
 
 ## Screenshots
 
-![Desktop View - Schedule](https://imgur.com/ywDiTdF)
+### Desktop View
 
-![Mobile View - Schedule](https://imgur.com/4vfreFf)
+![Desktop View - Schedule](https://i.imgur.com/ywDiTdF.png)
 
-![Adding New Duty Form](https://imgur.com/yx0V9up)
+### Mobile View
+
+![Mobile View - Schedule](https://i.imgur.com/4vfreFf.png)
+
+### Adding New Duty Form
+
+![Adding New Duty Form](https://i.imgur.com/yx0V9up.png)
 
 ## Tech stack
 
